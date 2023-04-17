@@ -53,7 +53,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: "bebusl/jiny-log",
+      repo: "bebusl/jiny-log-comments",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
