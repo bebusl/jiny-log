@@ -25,12 +25,12 @@ export function filterPosts(posts: TPosts, options: Options = initialOption) {
     })
     // filter status
     .filter((post) => {
-      const postStatus = post.status[0]
+      const postStatus = post.status?.length ? post.status[0] : "Private"
       return acceptStatus.includes(postStatus)
     })
     // filter type
     .filter((post) => {
-      const postType = post.type[0]
+      const postType = post.type?.length ? post.type[0] : "Page"
       return acceptType.includes(postType)
     })
   return filteredPosts

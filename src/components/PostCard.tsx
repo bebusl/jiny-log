@@ -14,7 +14,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
   const category = (data.category && data.category?.[0]) || undefined
 
   return (
-    <Link href={`/${data.slug}`}>
+    <Link href={`/${data.slug}`} prefetch={false}>
       <a>
         <article
           key={data.id}
